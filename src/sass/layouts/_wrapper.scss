@@ -1,0 +1,16 @@
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+
+  @include media-desktop {
+    padding: 0 40px;
+  }
+
+  @include media-desk-tab {
+    padding: 0 30px;
+  }
+
+  @include media-mobile {
+    padding: 0 10px;
+  }
+}

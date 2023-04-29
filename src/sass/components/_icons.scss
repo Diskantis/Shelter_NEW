@@ -1,0 +1,78 @@
+.ico {
+  display: inline-flex;
+}
+
+.ico_arrow_left {
+  width: 14px;
+  height: 6px;
+  background-image: url("../assets/icons/arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.ico_arrow_right {
+  width: 14px;
+  height: 6px;
+  background-image: url("../assets/icons/arrow.svg");
+  background-repeat: no-repeat;
+  rotate: 180deg;
+}
+
+.ico_help {
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+
+  @include media-mobile {
+    scale: 0.8333;
+    padding-bottom: 10px;
+  }
+}
+
+.food {
+  background-image: url("../assets/icons/icon-pet-food.svg");
+}
+.transport {
+  background-image: url("../assets/icons/icon-transportation.svg");
+}
+.toys {
+  background-image: url("../assets/icons/icon-toys.svg");
+}
+.bowls {
+  background-image: url("../assets/icons/icon-bowls-and-cups.svg");
+}
+.shampoos {
+  background-image: url("../assets/icons/icon-shampoos.svg");
+}
+.vitamins {
+  background-image: url("../assets/icons/icon-vitamins.svg");
+}
+.medicines {
+  background-image: url("../assets/icons/icon-medicines.svg");
+}
+.collars {
+  background-image: url("../assets/icons/icon-collars-leashes.svg");
+}
+.sleeping {
+  background-image: url("../assets/icons/icon-sleeping-area.svg");
+}
+
+.icon_contact {
+  width: 40px;
+  height: 32px;
+  background-repeat: no-repeat;
+ }
+
+.email {
+  background-image: url("../assets/icons/icon-email.svg");
+}
+
+.phone {
+  background-image: url("../assets/icons/icon-phone.svg");
+}
+
+.icon_location {
+  width: 22px;
+  height: 32px;
+  background-image: url("../assets/icons/icon-marker.svg");
+  background-repeat: no-repeat;
+}

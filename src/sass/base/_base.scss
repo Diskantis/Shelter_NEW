@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  //max-width: 1280px;
+  margin: auto;
+  color: $color-dark-body-text;
+  @extend %font-secondary;
+  @include font($size: 1.5rem, $height: 2.4rem);
+}
+
+body.fix {
+  overflow: hidden;
+}
+
+
+h1 {
+  color: $color-light-text;
+  @extend %font-primary;
+  @include font($size: 4.4rem, $height: 5.7rem);
+
+  @include media-mobile {
+    @include font($size: 2.5rem, $height: 3.2rem);
+    letter-spacing: 0.06em;
+  }
+}
+
+h2 {
+  color: $color-dark-text;
+  @extend %font-primary;
+  @include font($size: 3.5rem, $height: 4.5rem);
+  letter-spacing: 0.06em;
+
+  @include media-mobile {
+    @include font($size: 2.5rem, $height: 3.2rem);
+    letter-spacing: 0.06em;
+  }
+}
+

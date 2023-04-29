@@ -1,0 +1,16 @@
+.cover__modal-bg {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.8s;
+  z-index: 50;
+}
+
+.cover__modal-bg.active {
+  visibility: visible;
+  background: rgba(41, 41, 41, 0.6);
+}

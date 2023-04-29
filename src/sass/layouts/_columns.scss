@@ -1,0 +1,18 @@
+.layout-2-column {
+  @include columns ($width: 45%);
+}
+
+.layout-3-column {
+  @include columns ($width: 27%);
+  &:after {
+    content: '';
+    width: 27%;
+    display: block;
+  }
+
+  @include media-tablet {
+  }
+
+  @include media-mobile {
+  }
+}

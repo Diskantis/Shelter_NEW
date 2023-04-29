@@ -1,0 +1,22 @@
+.background-header-not_only {
+  background-image: url("../assets/images/start-screen-gradient-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+
+  @include media-desk-tab {
+    padding: 30px 30px;
+  }
+
+  @include media-mobile {
+    padding: 30px 20px;
+  }
+}

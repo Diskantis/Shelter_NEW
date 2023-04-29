@@ -1,0 +1,59 @@
+.page-our-friends {
+  background-color: $color-friends-bg;
+}
+
+.our-friends-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  &.pets{
+    @include media-desk-tab {
+      padding-bottom: 75px;
+    }
+
+    @include media-mobile {
+      padding-bottom: 44px;
+    }
+  }
+
+  @include media-tablet {
+    padding: 42px 0;
+  }
+}
+
+.our-friends__title {
+  text-align: center;
+}
+
+.our-friends__btn-link {
+  text-decoration-line: none;
+
+  @include media-mobile {
+    margin-top: 42px;
+  }
+}
+
+
+
+//.text_arr {
+//  color: $color-dark-btn-text;
+//  @extend %font-primary;
+//  @include font ($size: 2.0rem, $height: 2.3rem);
+//  letter-spacing: 0.06em;
+//  &.inactive {
+//    color: $color-nav-text;
+//  }
+//}
+//
+//.slider-manage {
+//  display: flex;
+//  column-gap: 20px;
+//
+//  @include media-mobile {
+//    column-gap: 10px;
+//  }
+//}
+
+

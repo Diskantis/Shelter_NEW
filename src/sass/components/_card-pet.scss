@@ -1,0 +1,36 @@
+.card-pet {
+  width: 270px;
+  height: 435px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-nav-text_hover;
+  border-radius: 9px;
+  gap: 30px;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-light-text;
+    .btn_card {
+      background-color: $color-btn-bg-hov;
+      border-color: $color-btn-bg-hov;
+    }
+  }
+}
+
+.card-pet__img {
+  width: 270px;
+  height: 270px;
+  background-repeat: no-repeat;
+  border-radius: 9px 9px 0 0;
+}
+
+
+.card-pet__name {
+  @extend %font-primary;
+  @include font ($size: 2.0rem, $height: 2.3rem);
+  letter-spacing: 0.06em;
+}
+
+.card-pet__btn-link {
+  text-decoration-line: none;
+}

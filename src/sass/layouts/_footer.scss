@@ -1,0 +1,143 @@
+.contacts__block {
+  display: flex;
+  column-gap: 140px;
+  padding-top: 40px;
+
+  @include media-desktop {
+    padding-top: 31px;
+    column-gap: 38px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @include media-mobile {
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.questions__block{
+  width: 300px;
+  height: 234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include media-mobile {
+    align-items: center;
+  }
+}
+.waiting__block {
+  width: 300px;
+  height: 234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include media-mobile {
+    align-items: center;
+    margin-top: 4px;
+  }
+}
+
+.questions-title {
+  color: $color-light-text;
+  padding-top: 17px;
+  padding-bottom: 40px;
+
+  @include media-desk-tab {
+    padding-top: 0;
+  }
+
+  @include media-mobile {
+    text-align: center;
+  }
+}
+.waiting-title {
+  color: $color-light-text;
+  padding-top: 17px;
+  padding-bottom: 32px;
+
+  @include media-desk-tab {
+    padding-top: 0;
+  }
+
+  @include media-mobile {
+    width: 290px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+}
+.questions__content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include media-mobile {
+    align-items: center;
+  }
+}
+
+.waiting__content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include media-mobile {
+    width: 300px;
+    align-items: start;
+  }
+}
+
+.questions__item{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration-line: none;
+  margin-bottom: 40px;
+}
+
+.waiting__item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration-line: none;
+  margin-bottom: 34px;
+
+  @include media-mobile {
+    margin-bottom: 40px;
+  }
+}
+
+.contact_text {
+  color: $color-btn-border;
+  @extend %font-primary;
+  @include font ($size: 2.0rem, $height: 2.3rem);
+  letter-spacing: 0.06em;
+  padding-left: 20px;
+}
+
+.contacts-img {
+  width: 300px;
+  height: 310px;
+  background-image: url("../assets/images/footer-puppy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 20px;
+
+  @include media-desk-tab {
+    margin-top: 65px;
+    margin-left: 0;
+  }
+
+  @include media-mobile {
+    width: 260px;
+    height: 269px;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+}
